@@ -10,5 +10,5 @@ from .treatment import (
     TreatmentTime,
 )
 
-from .tnbc_data import TNBCPatientData, TNBCVisitData # isort: skip
+from .tnbc_data import TNBCPatientData, TNBCVisitData  # isort: skip
 from .hgg_data import HGGPatientData, HGGVisitData  # isort: skip
