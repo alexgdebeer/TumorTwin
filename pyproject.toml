@@ -5,17 +5,18 @@ dynamic = ["version"]
 requires-python = ">=3.9"
 
 dependencies = [
-    "numpy",
+    "numpy<2",
     "scipy >= 1.13",
     "scikit-learn >= 1.5",
     "matplotlib >= 3.9",
-    "torch < 2.3",
+    "torch",
     "torchdiffeq",
     "mypy",
     "flake8",
     "isort",
     "black[jupyter]",
     "ipykernel",
+    "ipywidgets",
     "nbformat",
     "rich",
     "nibabel",
@@ -23,11 +24,11 @@ dependencies = [
     "pydantic",
     "pydantic-settings",
     "tqdm",
-    "types-tqdm",
+    "types-tqdm"
 ]
 
 [tool.setuptools]
-py-modules = ["tumortwin"]
+packages.find.include = ["tumortwin*"]
 
 [tool.isort]
 profile = "black"

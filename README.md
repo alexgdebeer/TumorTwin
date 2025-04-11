@@ -14,7 +14,9 @@
 ## Quick start
 To jump right in, click the badge below to launch a tutorial/demo in Google Colab:
 
-[![HGG Demo](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/OncologyModelingGroup/TumorTwin/blob/main/tutorials/HGG_Calibration.ipynb)
+[![HGG Demo](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/OncologyModelingGroup/TumorTwin/blob/main/tutorials/HGG_Demo.ipynb)
+
+[![TNBC Demo](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/OncologyModelingGroup/TumorTwin/blob/main/tutorials/TNBC_Demo.ipynb)
 
 ## Full Documentation
 
