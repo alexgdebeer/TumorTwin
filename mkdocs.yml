@@ -1,0 +1,107 @@
+site_name: TumorTwin
+site_url: https://sitename.example
+
+theme:
+  name: material
+  logo: assets/tumor_twin_logo_whitebg.png
+  palette:
+# Dark Mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Dark mode
+      primary: custom
+      accent: custom
+
+    # Light Mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Light mode
+      primary: custom
+      accent: custom
+  features:
+    - navigation.tabs
+
+nav:
+  - Home:
+    - index.md
+    - installation.md
+    - contributing.md
+    - License: LICENSE.md
+    - Theory: theory.md
+  - Tutorials:
+    - Index : tutorials.md
+    - End-to-end Demos: 
+      - High-grade Glioma (HGG): tutorials/HGG_Demo.ipynb
+      - Triple-negative breast cancer (TNBC): tutorials/TNBC_Demo.ipynb
+    - Cropping : tutorials/Cropping_Demo.ipynb
+    - Gradient Computation : tutorials/HGG_Gradients.ipynb
+  - API Documentation:
+    - TumorTwin:
+      - Preprocessing:
+        - Boundary conditions : api/preprocessing/boundary_conditions.md
+        - Cellularity estimation : api/preprocessing/cellularity.md
+        - Image cropping : api/preprocessing/crop.md
+      - Models: 
+          - Model Base Class: api/models/base.md
+          - Reaction-Diffusion model: api/models/rxdx.md
+      - Solvers: 
+          - Solver Base Class: api/solvers/base.md
+          - PyTorch DiffEq solver : api/solvers/torchdiffeq.md
+      - Postprocessing:
+        - Quantities of interest: api/postprocessing/qoi.md
+      - Types: 
+          - Patient data classes: 
+              - HGG: api/types/patient_data/hgg_types.md
+              - TNBC: api/types/patient_data/tnbc_types.md
+          - Imaging: api/types/imaging.md
+          - Treatments: api/types/treatments.md
+
+plugins:
+- search
+- mkdocs-jupyter
+- mkdocstrings:
+    handlers:
+      python:
+        options:
+          show_source: False
+          docstring_style: google
+        extensions:
+          - griffe_pydantic:
+              schema: true
+        # paths: []
+        # options:
+          # members_order: source
+          # separate_signature: true
+          # filters: ["!^_"]
+          # docstring_options:
+            # ignore_init_summary: true
+          # merge_init_into_class: true
+          # show_signature_annotations: true
+          # signature_crossrefs: true
+          # extensions:
+            # - docs/plugins/griffe_doclinks.py
+        # import:
+          # - url: https://docs.python.org/3/objects.inv
+            # domains: [py, std]
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+
+extra_css:
+  - stylesheets/extra.css

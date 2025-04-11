@@ -1,0 +1,98 @@
+{
+  "patient": "TNBC_demo_004",
+  "breastmask": "{$image_dir}/breast_mask.nii.gz",
+  "adiposemask": "{$image_dir}/adipose_mask.nii.gz",
+  "fibroglandularmask": "{$image_dir}/fibroglandular_mask.nii.gz",
+  "T1_post": "{$image_dir}/T1_post.nii.gz",
+  "visits": [
+    {
+      "time": "2001-09-14T00:00:00.000000",
+      "adc": "{$image_dir}/ADC_v1.nii.gz",
+      "roi_enhance": "{$image_dir}/ROI_enhance_v1.nii.gz"
+    },
+    {
+      "time": "2001-11-10T00:00:00.000000",
+      "adc": "{$image_dir}/ADC_v2.nii.gz",
+      "roi_enhance": "{$image_dir}/ROI_enhance_v2.nii.gz"
+    },
+    {
+      "time": "2002-01-11T00:00:00.000000",
+      "adc": "{$image_dir}/ADC_v3.nii.gz",
+      "roi_enhance": "{$image_dir}/ROI_enhance_v3.nii.gz"
+    }
+  ],
+  "chemotherapy": [
+    {
+      "time": "2001-10-19T00:00:00.000000",
+      "dose": 1,
+      "units": "mg",
+      "type": "taxol"
+    },
+    {
+      "time": "2001-10-26T00:00:00.000000",
+      "dose": 1,
+      "units": "mg",
+      "type": "taxol"
+    },
+    {
+      "time": "2001-11-02T00:00:00.000000",
+      "dose": 1,
+      "units": "mg",
+      "type": "taxol"
+    },
+    {
+      "time": "2001-11-09T00:00:00.000000",
+      "dose": 1,
+      "units": "mg",
+      "type": "taxol"
+    },
+    {
+      "time": "2001-11-16T00:00:00.000000",
+      "dose": 1,
+      "units": "mg",
+      "type": "taxol"
+    },
+    {
+      "time": "2001-11-23T00:00:00.000000",
+      "dose": 1,
+      "units": "mg",
+      "type": "taxol"
+    },
+    {
+      "time": "2001-11-30T00:00:00.000000",
+      "dose": 1,
+      "units": "mg",
+      "type": "taxol"
+    },
+    {
+      "time": "2001-12-07T00:00:00.000000",
+      "dose": 1,
+      "units": "mg",
+      "type": "taxol"
+    },
+    {
+      "time": "2001-12-14T00:00:00.000000",
+      "dose": 1,
+      "units": "mg",
+      "type": "taxol"
+    },
+    {
+      "time": "2001-12-21T00:00:00.000000",
+      "dose": 1,
+      "units": "mg",
+      "type": "taxol"
+    },
+    {
+      "time": "2001-12-28T00:00:00.000000",
+      "dose": 1,
+      "units": "mg",
+      "type": "taxol"
+    },
+    {
+      "time": "2002-01-04T00:00:00.000000",
+      "dose": 1,
+      "units": "mg",
+      "type": "taxol"
+    }
+  ]
+}
