@@ -4,7 +4,7 @@
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://black.readthedocs.io/en/stable/)
 [![Issues](https://img.shields.io/github/issues/OncologyModelingGroup/TumorTwin)](https://github.com/OncologyModelingGroup/TumorTwin/issues)
 
-## ![TumorTwin Logo](./docs/assets/tumor_twin.png)
+## ![TumorTwin Logo](assets/tumor_twin.png)
 `TumorTwin` is a python framework for creating image-guided cancer-patient digital twins (CPDTs). It includes functionality for:
 1. Loading and handling patient datasets, including treatment data and multi-modal longitudinal MRI data.
 2. Simulating tumor growth and response to treatment.
