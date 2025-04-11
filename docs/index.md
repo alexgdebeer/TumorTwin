@@ -1,4 +1,4 @@
-# Welcome to TumorTwin!
+![TumorTwin](assets/tumor_twin.png)
 
 `TumorTwin` is a python package for creating image-guided digital twins in oncology.
 
