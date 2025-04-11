@@ -1,30 +1,39 @@
 [project]
 name = "tumortwin"
 dynamic = ["version"]
-
-requires-python = ">=3.9"
+requires-python = ">=3.9, <3.12"
 
 dependencies = [
     "numpy==1.23.5",
     "scipy >= 1.13",
-    "scikit-learn >= 1.5",
     "matplotlib >= 3.9",
     "torch",
     "torchdiffeq",
-    "mypy",
-    "flake8",
-    "isort",
-    "black[jupyter]",
     "ipykernel",
     "ipywidgets",
     "nbformat",
     "rich",
     "nibabel",
-    "pytest",
     "pydantic",
     "pydantic-settings",
     "tqdm",
     "types-tqdm"
+]
+
+[project.optional-dependencies]
+docs = [
+    "mkdocs",
+    "mkdocs-material",
+    "mkdocs-jupyter",
+    "mkdocstrings",
+    "mkdocstrings-python"
+]
+dev = [
+    "pytest",
+    "mypy",
+    "flake8",
+    "black[jupyter]",
+    "isort",
 ]
 
 [tool.setuptools]
