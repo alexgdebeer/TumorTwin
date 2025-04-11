@@ -22,7 +22,7 @@ For installation instructions, tutorials, and full API reference check out out t
 
 ## License
 
-This package is released under a UT Austin Research license. Commercial use is prohibited without prior permission from UT Austin. See [LICENSE.md](https://OncologyModelingGroup.github.io/TumorTwin/LICENSE.md) for more details.
+This package is released under a UT Austin Research license. Commercial use is prohibited without prior permission from UT Austin. See [LICENSE.md](./LICENSE.md) for more details.
 
 ## References
 If you find this library useful in your research, please consider citing the following references:
