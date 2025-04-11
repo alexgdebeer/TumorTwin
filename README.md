@@ -12,9 +12,13 @@
 4. Calibrating model parameters to longitudinal MRI data.
 
 ## Quick start
-To jump right in, click the badge below to launch a tutorial/demo in Google Colab:
+To jump right in, click a badge below to launch one of our tutorial notebooks in Google Colab:
+
+**High-grade glioma (HGG) Demo:**
 
 [![High-grade glioma (HGG) Demo](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/OncologyModelingGroup/TumorTwin/blob/main/tutorials/HGG_Demo.ipynb)
+
+**Triple-negative breast cancer (TNBC) Demo**:
 
 [![Triple-negative breast cancer (TNBC) Demo](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/OncologyModelingGroup/TumorTwin/blob/main/tutorials/TNBC_Demo.ipynb)
 
