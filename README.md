@@ -1,5 +1,5 @@
 
-[![License](https://img.shields.io/github/license/OncologyModelingGroup/TumorTwin)](./LICENSE)
+[![License](https://img.shields.io/github/license/OncologyModelingGroup/TumorTwin)](./LICENSE.md)
 [![Top language](https://img.shields.io/github/languages/top/OncologyModelingGroup/TumorTwin)](https://www.python.org)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://black.readthedocs.io/en/stable/)
 [![Issues](https://img.shields.io/github/issues/OncologyModelingGroup/TumorTwin)](https://github.com/OncologyModelingGroup/TumorTwin/issues)
@@ -14,9 +14,9 @@
 ## Quick start
 To jump right in, click the badge below to launch a tutorial/demo in Google Colab:
 
-[![HGG Demo](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/OncologyModelingGroup/TumorTwin/blob/main/tutorials/HGG_Demo.ipynb)
+[![High-grade glioma (HGG) Demo](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/OncologyModelingGroup/TumorTwin/blob/main/tutorials/HGG_Demo.ipynb)
 
-[![TNBC Demo](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/OncologyModelingGroup/TumorTwin/blob/main/tutorials/TNBC_Demo.ipynb)
+[![Triple-negative breast cancer (TNBC) Demo](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/OncologyModelingGroup/TumorTwin/blob/main/tutorials/TNBC_Demo.ipynb)
 
 ## Full Documentation
 
@@ -24,14 +24,14 @@ For installation instructions, tutorials, and full API reference check out out t
 
 ## License
 
-This package is released under a UT Austin Research license. Commercial use is prohibited without prior permission from UT Austin. See [LICENSE.md](https://OncologyModelingGroup.github.io/TumorTwin/LICENSE.md) for more details.
+This package is released under a UT Austin Research license. Commercial use is prohibited without prior permission from UT Austin. See [LICENSE.md](./LICENSE.md) for more details.
 
 ## References
 If you find this library useful in your research, please consider citing the following references:
 
 #### TumorTwin Technical Report
 ```
-TBD
+Coming soon!
 ```
 #### TumorTwin Codebase
 ```
