@@ -28,7 +28,6 @@ def plot_loss(losses: torch.Tensor, ax: Optional[Axes] = None):
     y_min, y_max = np.ceil(np.min(log_losses)), np.floor(np.max(log_losses))
     y_ticks = np.arange(y_max, y_min - 1, -1)  # Step of -1 for log scale
 
-    # Set labels with Times New Roman and fontsize 16
     plt.xlabel("Optimization iteration")
     plt.ylabel("Loss (log10)")
 
@@ -102,21 +101,14 @@ def plot_maps_final(
     _ = ax[0].imshow(blended_initial, vmin=0, vmax=vmax_value)
     _ = ax[1].imshow(blended_optimized, vmin=0, vmax=vmax_value)
     im3 = ax[2].imshow(blended_ground_truth, vmin=0, vmax=vmax_value)
-    # Titles with Times New Roman font
     ax[0].set_title(
         f"Initial condition: t = {patient_data.visit_days[0]} days",
-        fontname="Times New Roman",
-        fontsize=16,
     )
     ax[1].set_title(
         f"Model tumor slice: t = {t_final} days",
-        fontname="Times New Roman",
-        fontsize=16,
     )
     ax[2].set_title(
         f"Observed tumor slice: t = {t_final} days",
-        fontname="Times New Roman",
-        fontsize=16,
     )
 
     # Remove axis ticks
@@ -130,11 +122,7 @@ def plot_maps_final(
     )  # Position: [left, bottom, width, height]
     cbar = fig.colorbar(im3, cax=cbar_ax, orientation="horizontal")
     cbar.ax.tick_params(labelsize=16)  # Increase font size
-    cbar.ax.set_title(
-        "Normalized tumor cell density", fontname="Times New Roman", fontsize=16
-    )
-    for label in cbar.ax.get_xticklabels():
-        label.set_fontname("Times New Roman")  # Set font to Times New Roman
+    cbar.ax.set_title("Normalized tumor cell density")
 
     plt.show()
 
@@ -200,9 +188,9 @@ def plot_calibration(
         color="#984ea3",
         linestyle="None",
     )
-    plt.title("Total tumor cell count", font="Times New Roman", fontsize=16)
-    plt.xlabel("Days since first image", font="Times New Roman", fontsize=16)
-    plt.ylabel("Total tumor cell count", font="Times New Roman", fontsize=16)
+    plt.title("Total tumor cell count")
+    plt.xlabel("Days since first image")
+    plt.ylabel("Total tumor cell count")
     # plt.show()
 
 
