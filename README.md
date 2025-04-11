@@ -34,7 +34,7 @@ TBD
 #### TumorTwin Codebase
 ```
 @misc{tumortwin,
-	author={Kapteyn, Michael G.},
+	author={Kapteyn, Michael G. and Chaudhuri, Anirban and Lima, Ernesto A.B.F. and Pash, Graham and Bravo, Rafael and Yankeelov, Thomas E. and Willcox, Karen and Hormuth II, David A.},
 	title={TumorTwin},
 	year={2025},
 	url={https://github.com/OncologyModelingGroup/TumorTwin},
