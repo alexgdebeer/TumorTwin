@@ -5,7 +5,7 @@ dynamic = ["version"]
 requires-python = ">=3.9"
 
 dependencies = [
-    "numpy<2",
+    "numpy==1.23.5",
     "scipy >= 1.13",
     "scikit-learn >= 1.5",
     "matplotlib >= 3.9",
