@@ -26,7 +26,8 @@ docs = [
     "mkdocs-material",
     "mkdocs-jupyter",
     "mkdocstrings",
-    "mkdocstrings-python"
+    "mkdocstrings-python",
+    "pymdown-extensions"
 ]
 dev = [
     "pytest",

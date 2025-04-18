@@ -37,6 +37,13 @@ nav:
       - Triple-negative breast cancer (TNBC): tutorials/TNBC_Demo.ipynb
     - Cropping : tutorials/Cropping_Demo.ipynb
     - Gradient Computation : tutorials/HGG_Gradients.ipynb
+  - Theory:
+    - theory/00_overview.md
+    - theory/01_patient_data.md
+    - theory/02_model.md
+    - theory/03_solver.md
+    - theory/04_gradients.md
+    - theory/05_calibration.md
   - API Documentation:
     - TumorTwin:
       - Preprocessing:
@@ -100,8 +107,13 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
+  - pymdownx.arithmatex:
+      generic: true
   - admonition
   - pymdownx.details
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 extra_css:
   - stylesheets/extra.css
