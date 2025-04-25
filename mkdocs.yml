@@ -25,11 +25,10 @@ theme:
 
 nav:
   - Home:
-    - index.md
-    - installation.md
-    - contributing.md
+    - Overview: index.md
+    - Installation: installation.md
+    - Contributing: contributing.md
     - License: LICENSE.md
-    - Theory: theory.md
   - Tutorials:
     - Index : tutorials.md
     - End-to-end Demos: 
@@ -37,27 +36,30 @@ nav:
       - Triple-negative breast cancer (TNBC): tutorials/TNBC_Demo.ipynb
     - Cropping : tutorials/Cropping_Demo.ipynb
     - Gradient Computation : tutorials/HGG_Gradients.ipynb
+  - Developers:
+    - developers/developer.md
   - Theory:
-    - theory/00_overview.md
-    - theory/01_patient_data.md
-    - theory/02_model.md
-    - theory/03_solver.md
-    - theory/04_gradients.md
-    - theory/05_calibration.md
+    - theory/theory.md
   - API Documentation:
     - TumorTwin:
       - Preprocessing:
         - Boundary conditions : api/preprocessing/boundary_conditions.md
         - Cellularity estimation : api/preprocessing/cellularity.md
         - Image cropping : api/preprocessing/crop.md
+      - Treatments: 
+          - Radiotherapy: api/treatments/rt.md
+          - Chemotherapy : api/treatments/ct.md
       - Models: 
           - Model Base Class: api/models/base.md
           - Reaction-Diffusion model: api/models/rxdx.md
       - Solvers: 
           - Solver Base Class: api/solvers/base.md
           - PyTorch DiffEq solver : api/solvers/torchdiffeq.md
+      - Optimizers: 
+          - Levenberg Marquardt Optimizer : api/optimizers/lm.md
       - Postprocessing:
         - Quantities of interest: api/postprocessing/qoi.md
+        - Total Cell Count: api/postprocessing/tcc.md
       - Types: 
           - Patient data classes: 
               - HGG: api/types/patient_data/hgg_types.md

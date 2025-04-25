@@ -54,14 +54,14 @@ This will run automated tests that we have written, to ensure that your feature 
 pytest tests
 ```
 
-5. Request that your feature branch be merged in to the `main` branch by opening a pull-request.
+5\. Request that your feature branch be merged in to the `main` branch by opening a pull-request.
 
 Navigate to the [Pull Requests](https://github.com/OncologyModelingGroup/TumorTwin/pulls) tab on github. Click `New pull request` and follow the instructions. You should assign yourself to the pull request, and you can request a code review by assigning a reviewer (Alternatively, post on the group slack to say that a feature is ready for review!) 
 
-6. Address Code Review comments
+6\. Address Code Review comments
 
 The code reviewer may make ask questions or suggest improvements via comments on the pull request. Simply address the comments via new commits to your feature branch
 
-7. Merge your feature!
+7\. Merge your feature!
 
 Hit merge in the pull request on github. `Merge and Squash` is the prefered method, as this will squash all of your feature commits into a single commit, keeping the `main` branch history clean.
