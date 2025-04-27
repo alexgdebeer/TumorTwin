@@ -1,3 +1,3 @@
-::: tumortwin.types.tnbc_data
+::: tumortwin.optimizers.lm_optimizer
     options:
       show_submodules: true

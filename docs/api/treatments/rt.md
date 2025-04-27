@@ -1,3 +1,3 @@
-::: tumortwin.types.tnbc_data
+::: tumortwin.treatments.radiotherapy
     options:
       show_submodules: true
