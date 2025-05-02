@@ -30,10 +30,12 @@ For installation instructions, tutorials, and full API reference check out out t
 
 This package is released under a UT Austin Research license. Commercial use is prohibited without prior permission from UT Austin. See [LICENSE.md](./LICENSE.md) for more details.
 
+## Technical Report
+For a full discussion of the motivation, design principles, and underlying theory of `TumorTwin`, please refer to the complete technical report (available freely on [arXiv](https://arxiv.org/abs/2505.00670))
+
 ## References
 If you find this library useful in your research, please consider citing the following references:
-
-#### TumorTwin Technical Report
+#### TumorTwin Paper
 ```
 @misc{tumortwin-report,
 	title = {TumorTwin: A python framework for patient-specific digital twins in oncology},
