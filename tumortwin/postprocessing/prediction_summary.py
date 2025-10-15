@@ -74,6 +74,8 @@ def plot_predicted_TCC(
     ax: Optional[Axes] = None,
     color: str = "k",
     alpha: float = 1.0,
+    linewidth: float = 1.0,
+    linestyle: str = "-",
     carrying_capacity: float = 5062500,
 ):
     predicted_cell_counts = [
@@ -88,6 +90,8 @@ def plot_predicted_TCC(
         [days_since_first(t, timepoints[0]) for t in timepoints],
         [p.detach() for p in predicted_cell_counts],
         color=color,
+        linestyle=linestyle,
+        linewidth=linewidth,
         alpha=alpha,
     )
 
