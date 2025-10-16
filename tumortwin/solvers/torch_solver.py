@@ -55,7 +55,7 @@ class TorchDiffEqSolver(ForwardSolver):
         self.solver_options = solver_options
 
     def solve(
-        self, timepoints: List[datetime], u_initial: torch.Tensor
+        self, timepoints: List[datetime], u_initial: torch.Tensor, verbose: bool=False
     ) -> Tuple[List[datetime], List[torch.Tensor]]:
         """
         Solves the tumor growth model over the specified timepoints.
@@ -71,11 +71,12 @@ class TorchDiffEqSolver(ForwardSolver):
         """
         self.solver_options.device = self.model.device
 
-        self.model.progress_bar = tqdm.tqdm(
-            total=days_since_first(timepoints[-1], timepoints[0]),
-            desc=f"Forward Simulation: [{timepoints[0]} to {timepoints[-1]} with timestep {timedelta_to_days(self.solver_options.step_size):.2f} days]",
-            bar_format="{desc}: {percentage:3.0f}%|{bar}| {n:.1f}/{total:.1f} days elapsed",
-        )
+        if verbose:
+            self.model.progress_bar = tqdm.tqdm(
+                total=days_since_first(timepoints[-1], timepoints[0]),
+                desc=f"Forward Simulation: [{timepoints[0]} to {timepoints[-1]} with timestep {timedelta_to_days(self.solver_options.step_size):.2f} days]",
+                bar_format="{desc}: {percentage:3.0f}%|{bar}| {n:.1f}/{total:.1f} days elapsed",
+            )
 
         t = torch.tensor(
             [days_since_first(t, timepoints[0]) for t in timepoints],
